@@ -3,6 +3,11 @@
   --color-black: #070D15;
   --color-white: #FFFFFF;
   --color-cian: #A9D6CB;
+  --color-grey: #8C8C8C;
+  --color-grey2: #FFFFFF;
+
+
+
 }
 
 
@@ -11,6 +16,19 @@ body{
   font-weight: 400;
   font-style: normal;
   color: var(--color-blue);
+}
+
+.page {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+  
+  background-position: 280px 0px ;
+  background-size: 1280px;
+  background-repeat: no-repeat;
+  z-index: 0;
 }
 
 header figure{
@@ -39,20 +57,14 @@ header nav ul{
   list-style: none;
 }
 
-header{
-  width: 1920px;
-  height: 120px;
-}
-
 header.container{
-  width: 90%;
+  max-width: 90%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  gap: 105px;
+  gap: 100px;
+  position: relative;
+  z-index: 3;
 }
 
 header nav ul.menu{
@@ -60,47 +72,183 @@ header nav ul.menu{
   padding: 0;
   display: flex;
   flex-direction: row;
-  gap: 56px;
+  gap: 25px;
 }
 
 header div.icon{
   display: flex;
   flex-direction: row;
   height: 32px;
-  width: 32px;
-  gap: 32px;
+  gap: 15px;
+  padding-left: 56px;
 }
 
-header div.buttons{
+div.buttons{
   display: flex;
   flex-direction: row;
+  text-align: center;
+  align-items: center;
   gap: 10px;
-  margin-left: auto;
+  padding-top: 10px;
 }
 
-header div p.button-primary{
+div p.button-primary{
+  display: flex;
   color: var(--color-blue);
   padding: 8px 32px;
   border-radius: 32px;
+  gap: 15px;
+  
 }
 
-header div p.button-primary:hover{
+div p.button-primary:hover{
   background-color: var(--color-blue);
   color: var(--color-white);
 }
 
-header div p.button-secondary{
+div p.button-secondary{
   background-color: var(--color-blue);
   color: var(--color-white);
   padding: 8px 32px;
   border-radius: 32px;
+  
 }
 
-header div p.button-secondary:hover{
+div p.button-secondary:hover{
   background-color: var(--color-white);
   color: var(--color-blue);
 }
 
+section.nav-rigth{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
 
+section.items{
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  margin-top: 80px;
+  margin-left: 30px;
+  gap: 50px;
+  padding-bottom: 100px;
+}
 
+section article.item{
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+  align-items: center;
+}
 
+section article p.description-item{
+  text-align: center;
+  color: var(--color-grey);
+  padding: 0;
+  margin: 0;
+}
+
+section article h3.title-item{
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+  margin: 10px;
+  font-weight: normal;
+}
+
+section article img{
+  width: 60px;
+}
+
+section.hero{
+  gap: 15px;
+  padding-top: 30px;
+}
+
+section h1.title{
+  width: 50%;
+  font-size: 55px;
+  font-weight: bold;
+}
+
+section p.description{
+  color: var(--color-grey);  
+  width: 45%;
+  font-size: 20px;
+}
+
+section.testimonys{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: 70%;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  right: 150px;
+  z-index: 1;
+  padding: 40px;
+}
+
+section.testimonys-background{
+  width: 25%;
+  height: 70%;
+  background-color: var(--color-cian);
+  background-image: url("../img/img/spa.png");
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  right: 150px;
+  z-index: -2;
+  padding: 40px;
+  
+}
+
+section.testimonys article{
+  width:65%;
+  background-color: color-mix(in srgb, var(--color-white) 50%, transparent);
+  padding: 20px;
+  border-radius: 16px;
+}
+
+section.testimonys article p.name{
+  color: var(--color-blue);
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+section.testimonys article img{
+  width: 25px;
+}
+.description-testimony{
+  color: var(--color-black);
+  margin:0;
+  font-size: 12px;
+}
+
+.testimony-1{
+  margin-left: auto;
+  position: relative;
+  top:55%;
+ 
+}
+
+.testimony-2{
+  margin-right: auto;
+  position: relative;
+  top:65%;
+ 
+}
+
+img.fondo{
+  position: fixed;
+  width: 1300px;
+  z-index:-1;
+  top: 0px;
+  right: 100px;
+}
+}
